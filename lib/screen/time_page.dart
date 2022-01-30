@@ -51,24 +51,9 @@ class _TimePageState extends State<TimePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(18.0),
+      padding: const EdgeInsets.all(8.0),
       child: Row(
         children: [
-          Expanded(
-            flex: 1,
-            child: CustomSwitch(
-              activeColor: Colors.green,
-              value: status,
-              onChanged: (v) {
-                // print("V : $v");
-                setState(() {
-                  status = v;
-                  // Fluttertoast.showToast(msg: '$status');
-                });
-              },
-            ),
-          ),
-          const SizedBox(width: 60),
           status
               ? Expanded(
                   flex: 3,
@@ -79,7 +64,7 @@ class _TimePageState extends State<TimePage> {
                         child: Text(
                             '${(H < 10) ? "0$H" : H}:${(m < 10) ? "0$m" : m}:${(s < 10) ? "0$s" : s}',
                             style: const TextStyle(
-                              fontSize: 25.0,
+                              fontSize: 32.0,
                             )),
                       ),
                       // Expanded(
@@ -100,7 +85,7 @@ class _TimePageState extends State<TimePage> {
                         child: Text(
                           '${(h < 10) ? "0$h" : h}:${(m < 10) ? "0$m" : m}:${(s < 10) ? "0$s" : s}',
                           style: const TextStyle(
-                            fontSize: 25.0,
+                            fontSize: 32.0,
                           ),
                         ),
                       ),
@@ -108,12 +93,26 @@ class _TimePageState extends State<TimePage> {
                         flex: 1,
                         child: Text(
                           (H >= 12) ? "P.M" : "A.M",
-                          style: const TextStyle(fontSize: 25),
+                          style: const TextStyle(fontSize: 15),
                         ),
                       )
                     ],
                   ),
                 ),
+          Expanded(
+            flex: 1,
+            child: CustomSwitch(
+              activeColor: Colors.green,
+              value: status,
+              onChanged: (v) {
+                // print("V : $v");
+                setState(() {
+                  status = v;
+                  // Fluttertoast.showToast(msg: '$status');
+                });
+              },
+            ),
+          ),
         ],
       ),
     );
