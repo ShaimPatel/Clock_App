@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "716007131221",
+    "project_id": "clockapp-9bd4c",
+    "storage_bucket": "clockapp-9bd4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716007131221:android:e89ac7184c7380a856ecdc",
+        "android_client_info": {
+          "package_name": "com.example.clock_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716007131221-u1j7d81hm58hrejlbngh8dmgb7s0a4h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1a9pb5a_gjrojQCNgzuSwHRtPgpuhptQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716007131221-u1j7d81hm58hrejlbngh8dmgb7s0a4h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
