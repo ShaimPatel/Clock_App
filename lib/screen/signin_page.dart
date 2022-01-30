@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:clock_app/screen/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +21,7 @@ class _SigninPageState extends State<SigninPage> {
   // string for displaying the error Message
   String? errorMessage;
   bool agree = false;
-  bool _isLoading = false;
+  bool isLoading = false;
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   TextStyle defaultStyle =
@@ -175,7 +177,7 @@ class _SigninPageState extends State<SigninPage> {
                         ),
                       ),
                       onPressed: () {
-                        _isLoading = true;
+                        isLoading = true;
                         signin(_emailController.text, _passwordController.text);
                       },
                       child: Text(

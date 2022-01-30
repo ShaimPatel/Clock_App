@@ -1,5 +1,6 @@
+// ignore_for_file: avoid_print
+
 import 'package:clock_app/screen/home_page.dart';
-import 'package:clock_app/screen/signin_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
@@ -53,9 +54,7 @@ class _SignUpPageState extends State<SignUpPage> {
           'password': password,
           'contactno': phonenumber
         })
-        // ignore: avoid_print
         .then((value) => print('User are added..!'))
-        // ignore: avoid_print
         .catchError((error) => print("Feaild : $error"));
   }
 

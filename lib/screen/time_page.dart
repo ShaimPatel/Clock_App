@@ -1,5 +1,6 @@
+// ignore_for_file: import_of_legacy_library_into_null_safe, unused_import
+
 import 'dart:async';
-import 'dart:ui';
 
 import 'package:custom_switch/custom_switch.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,6 @@ class _TimePageState extends State<TimePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     H = DateTime.now().hour;
     m = DateTime.now().minute;
@@ -32,7 +32,7 @@ class _TimePageState extends State<TimePage> {
             ? 12
             : DateTime.now().hour;
 
-    Timer.periodic(Duration(seconds: 1), (Timer t) => getTime());
+    Timer.periodic(const Duration(seconds: 1), (Timer t) => getTime());
   }
 
   getTime() {

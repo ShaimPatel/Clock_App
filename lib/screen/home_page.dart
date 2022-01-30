@@ -3,10 +3,9 @@ import 'package:clock_app/screen/time_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_analog_clock/flutter_analog_clock.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intl/intl.dart';
-import 'package:slide_digital_clock/slide_digital_clock.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import '../model/user_model.dart';
